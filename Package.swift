@@ -17,11 +17,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(
-            name: "SendbirdChatSDK",
-            url: "https://github.com/sendbird/sendbird-chat-sdk-ios",
-            from: "4.25.0"
-        ),
+        .package(url: "https://github.com/sendbird/sendbird-chat-sdk-ios", .upToNextMinor(from: "4.25.0")),
     ],
     targets: [
         .binaryTarget(
